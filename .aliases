@@ -10,40 +10,16 @@ alias -- -="cd -"
 alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-<<<<<<< Local Changes
-alias qs="cd ~/Development/Qstream/qstream"
-
-=======
 alias qs="cd ~/Qstream/qstream"
->>>>>>> External Changes
 alias g="git"
 alias h="history"
 alias j="jobs"
 
-<<<<<<< Local Changes
-<<<<<<< Local Changes
-<<<<<<< Local Changes
-
-=======
-alias git=hub
-alias gs="git status -sb"
-alias co="git checkout"
-
->>>>>>> External Changes
-=======
 alias git=hub
 alias gs="git status -sb"
 alias co="git checkout"
 alias log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
->>>>>>> External Changes
-=======
-alias git=hub
-alias gs="git status -sb"
-alias co="git checkout"
-alias log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
-
->>>>>>> External Changes
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
