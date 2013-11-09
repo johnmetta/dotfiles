@@ -42,7 +42,7 @@
 [color]
 	# Use colors in Git commands that are capable of colored output when
 	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
-	ui = auto
+	ui = true
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -59,6 +59,28 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	keepBackup = false;
+	tool = p4merge
+[mergetool "p4merge"]
+	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[mergetool]
+	keepBackup = false
+[push]
+	default = tracking
+[branch]
+    # Always do rebase when pulling changes
+    autosetuprebase = always
+
+
+[user]
+	name = John Metta
+	email = john@johnmetta.com
+[github]
+	user = john@johnmetta.com
+
 
 # URL shorthands
 [url "git@github.com:"]
@@ -73,6 +95,3 @@
 	pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
-
-[push]
-	default = matching
