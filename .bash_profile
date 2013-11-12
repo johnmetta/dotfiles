@@ -41,3 +41,5 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=100000
 HISTFILESIZE=200000
+
+[ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
