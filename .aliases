@@ -18,6 +18,9 @@ alias j="jobs"
 alias git=hub
 alias gs="git status -sb"
 alias co="git checkout"
+alias ga="git commit -am"
+alias gc="git commit -m"
+alias gb="git branch"
 alias log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
 # Detect which `ls` flavor is in use
